@@ -1,0 +1,543 @@
+/*TOUT LE CORPS DE LA PAGE*/
+body
+{
+    width: 1300px;
+    margin: auto;
+    font-family: Arial, Verdana, 'Trebuchet MS';
+    background-color: #ffeedd;
+}
+/*EN TETE*/
+.marque
+{
+    margin: 0 5px;
+    padding: 0 5px;
+}
+.slogan
+{
+    margin: 0 5px;
+    margin-top: -8px;
+    padding: 0 5px;
+}
+.face
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    background-color: royalblue;
+    color: white;
+    margin-left: -24px;
+    margin-right: -24px;
+}
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+nav li
+{
+    margin-right: 20px;
+}
+nav a 
+{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+}
+nav a:hover
+{
+    text-decoration: underline;
+}
+.banniere
+{
+    height: 400px;
+    background-image: url(fond.png);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size:  600px 400px;
+    background-position: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+/*LA BANNIERE*/
+.banniere h2
+{
+    margin-left: 90px;
+    padding-left: 90px;
+    text-transform: uppercase;
+    font-size: x-large;
+    font-family: 'Comic Sans MS', 'Trebuchet MS';
+    color: royalblue;
+}
+.accueil
+{
+    font-weight: bold;
+    color: royalblue;
+}
+#accueil p 
+{
+    font-size: medium;
+}
+.banniere h3
+{
+    margin-left: 80px;
+    padding-top: 20px;
+    margin-top: -200px;
+    padding-left: 60px;
+    text-transform: uppercase;
+    font-size: large;
+    font-family: 'Comic Sans MS', 'Trebuchet MS';
+    color: royalblue;
+}
+/*SERVICES*/
+.services
+{
+    text-align: center;
+    margin: 40px 0;
+    color: royalblue;
+}
+.nos_services
+{
+    width: 30%;
+    margin: 10px 20px;
+    text-align: center;
+}
+.nos_services h3 
+{
+    text-align: center;
+    color: royalblue;
+}
+#services
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.importants
+{
+    font-weight: bold;
+    color: royalblue;
+    font-size: medium;
+}
+/*A PROPOS DE NOUS*/
+#about h3
+{
+    color: royalblue;
+}
+.images
+{
+    width: 500x;
+    height: 100px;
+}
+.images img
+{
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+}
+/*FOOTER*/
+footer
+{
+    margin-left: -24px;
+    margin-right: -24px;
+    color: white;
+    background-color:royalblue;
+    }
+
+.partenaires_contacts
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.partenaires_contacts ul, .partenaires_contacts a
+{
+    list-style-type: none;
+    text-decoration: none;
+}
+.titres
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.particulier
+{
+    margin-left: 35px;
+}
+.site
+{
+    color: white;
+}
+.site:hover
+{
+    text-decoration: underline;
+}
+/*GLOBALE*/
+#accueil, .nos_services p, #about p, .partenaires_contacts
+{
+    font-size: large;
+}
+@media all and (min-width: 769px) and (max-width: 1279px)
+{
+    body 
+    {
+        width: auto;
+    }
+    .nos_services
+    {
+        width: 40%;
+        margin: 10px 20px;
+        text-align: center;
+        font-size: small;
+    }
+}
+/*pour les tablettes*/
+@media all and (min-width: 481px) and (max-width: 768px)
+{
+    body 
+    {
+        width: auto;
+    }
+    .face
+    {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    background-color: royalblue;
+    color: white;
+    margin-left: 0;
+    margin-right: 0;
+    }
+    .marque
+    {
+        margin: 0;
+        padding: 0;
+        font-size: large;
+    }
+    .slogan
+    {
+        margin: 0;
+        margin-top: -4px;
+        padding: 0;
+        font-size: medium;
+    }  
+    nav li
+    {
+        margin-right: 15px;
+    }
+
+    nav a 
+    {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        font-size: medium;
+        font-weight: bold;
+    }
+    .nos_services
+    {
+        width: 40%;
+        margin: 10px 20px;
+        text-align: center;
+        font-size: small;
+    }
+    .nos_services h3 
+    {
+        text-align: center;
+        color: royalblue;
+        font-size: large;
+    }
+    #services
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .banniere h2
+    {
+        margin-left: 90px;
+        padding-left: 90px;
+        text-transform: uppercase;
+        font-size: x-large;
+        font-family: 'Comic Sans MS', 'Trebuchet MS';
+        display: none;
+    }
+    .banniere h3
+    {
+        margin-left: 80px;
+        padding-top: 20px;
+        margin-top: -200px;
+        padding-left: 60px;
+        text-transform: uppercase;
+        font-size: large;
+        font-family: 'Comic Sans MS', 'Trebuchet MS';
+        color: royalblue;
+        display: none;
+    }
+    .accueil
+    {
+    font-weight: bold;
+    color: royalblue;
+    }
+    #accueil p 
+    {
+    font-size: medium;
+    }
+    #about h3
+    {
+        color: royalblue;
+        font-size: large;
+    }
+    #about p
+    {
+        font-size: medium;
+    }
+
+    .images
+    {
+        width: 500x;
+        height: 100px;
+    }
+    .images img
+    {
+        width: 60px;
+        height: 60px;
+        margin-left: 20px;
+    }
+    footer
+    {
+        margin-left: -24px;
+        margin-right: -24px;
+        color: white;
+        background-color:royalblue;
+    }
+    
+    .partenaires_contacts
+    {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: small;
+    }
+    .partenaires_contacts ul, .partenaires_contacts a
+    {
+        list-style-type: none;
+        text-decoration: none;
+    }
+    .titres
+    {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: small;
+    }
+    .particulier
+    {
+        margin-left: 35px;
+    }
+    .site
+    {
+        color: white;
+    }
+    .site:hover
+    {
+        text-decoration: underline;
+    }
+}
+
+/*pour les navigateurs mobiles*/
+@media all and (max-width: 480px) 
+{
+    body 
+    {
+        width: auto;
+        margin: auto;
+    }
+    .face
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center; 
+        background-color: royalblue;
+        color: white;
+        height: 64px;
+    }
+    nav ul
+    {
+        list-style-type: none;
+        display: flex;
+    }
+    .marque
+    {
+        margin: 0 5px;
+        padding: 0 5px;
+    }
+    .slogan
+    {
+      margin: 0 5px;
+      margin-top: -8px;
+      padding: 0 5px;
+    }
+    .banniere
+    {
+        height: 200px;
+        background-image: url(fond.png);
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        background-size:  300px 200px;
+    }
+    .banniere h2, .banniere h3
+    {
+        display: none;
+    }
+    #accueil
+    {
+        width: auto;
+        margin-left: 8px;
+        margin-left: 8px;
+    }
+    .services
+    {
+        text-align: center;
+        margin: 40px 0;
+        color: royalblue;
+        font-size: large;
+    }
+    .nos_services h3 
+    {
+        text-align: center;
+        color: royalblue;
+        font-size: medium;
+    }
+    .nos_services
+    {
+        width: auto;
+        margin: 10px 20px;
+        text-align: center;
+    }
+    .nos_services p  
+    {
+        font-size: small;
+    }
+    #services
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .importants
+    {
+        font-weight: bold;
+        color: royalblue;
+    }
+    #about h3
+    {
+        color: royalblue;
+        text-align: center;
+    }
+    #about
+    {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    #about p 
+    {
+        font-size: small;
+    }
+    #about h3
+    {
+        font-size: medium;
+    }
+    footer
+    {
+        width: auto;
+        color: white;
+        background-color:royalblue; 
+    }
+    footer li 
+    {
+        font-size: small;
+    }
+    .facultatif
+    {
+        display: none;
+    }
+    
+    .partenaires_contacts
+    {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .partenaires_contacts ul, .partenaires_contacts a
+    {
+        list-style-type: none;
+        text-decoration: none;
+    }
+    .titres
+    {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+    .titres h2
+    {
+        font-size: medium;
+    }
+    .particulier
+    {
+        margin-left: 35px;
+    }
+    .site
+    {
+        color: white;
+    }
+    .site:hover
+    {
+        text-decoration: none;
+    }
+    .marque
+    {
+        margin: 0 5px;
+        padding: 0 5px;
+        font-size: large;
+    }
+    .slogan
+    {
+        margin: 0 5px;
+        margin-top: -4px;
+        padding: 0 5px;
+        font-size: medium;
+    }
+    nav 
+    {
+        margin-top: -6px;
+    }
+    nav a:hover
+    {
+        text-decoration: none;
+    }
+    nav a 
+    {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        font-weight: bold;
+        font-size: small;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
